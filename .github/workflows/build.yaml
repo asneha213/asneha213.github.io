@@ -1,0 +1,53 @@
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Cache
+        uses: actions/cache@v3
+        with:
+          path: _source/highlightjs node_modules/katex
+          key: deps-${{ hashFiles('Makefile') }}
+      - name: Setup
+        run: make setup
+      - name: Jekyll build
+        uses: jerryjvl/jekyll-build-action@v1
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: site
+          path: _site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Tailscale
+        uses: tailscale/github-action@main
+        with:
+          authkey: ${{ secrets.TAILSCALE_AUTHKEY }}
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: site
+          path: _site
+      - run: ls -R
+      - name: rsync
+        env:
+          DEPLOY_HOST: cslinux.cs.cornell.edu
+          DEPLOY_USER: als485
+          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+          DEPLOY_KNOWN_HOSTS: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
+          DEPLOY_SRC: ./_site/
+          DEPLOY_DEST: /people/als485/home
+        run: |
+          echo "$DEPLOY_KEY" > pk
+          echo "$DEPLOY_KNOWN_HOSTS" > kh
+          chmod 600 pk
+          rsync --compress --recursive --checksum --itemize-changes --delete \
+            --perms --chmod=Du=rwx,Dgo=rx,Fu=rw,Fog=r \
+            -e "ssh -i pk -o 'UserKnownHostsFile kh'" \
+            $DEPLOY_SRC $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_DEST

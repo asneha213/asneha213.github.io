@@ -1,0 +1,16 @@
+---
+layout: default
+title: Blog Drafts
+---
+<h2 class="with-tagline">Unpublished Drafts</h2>
+
+{% for post in site.drafts %}
+<article class="preview">
+    <h3>
+        <a href="{{ site.base }}{{ post.url }}">{{ post.title }}</a>
+    </h3>
+    <div class="excerpt">
+        {{ post.excerpt | replace: 'SITE_BASE', site.url | markdownify }}
+    </div>
+</article>
+{% endfor %}

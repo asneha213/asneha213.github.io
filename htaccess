@@ -1,0 +1,13 @@
+---
+layout: null
+permalink: .htaccess
+---
+ErrorDocument 404 {{ site.baseurl }}/404.html
+
+RewriteEngine on
+RewriteBase {{ site.baseurl }}/
+{% for item in site.redirect %}
+{% assign shortname=item[0] %}
+{% assign path=item[1] %}
+RewriteRule ^{{ shortname }} {{ site.url }}/{{ path }} [L,R=301]
+{% endfor %}

@@ -1,0 +1,604 @@
+---
+---
+
+$column-width: 720px;
+$mobile-size: $column-width;
+
+// My trademarked green.
+//$highlight: #51a012;
+$highlight-dark: #7bd12d;
+
+$highlight: #FF6C0C;
+
+
+// Some colors.
+$bg-dark: black;
+$text-color: #333;
+$text-color-dark: #ddd;
+$inset-bg: #f5f5f5;
+$inset-bg-dark: #444;
+$inset-text: #666;
+$inset-text-dark: #ccc;
+$inset-border: #ccc;
+$inset-border-dark: #888;
+$link-hover-color: darken($highlight, 15%);
+$link-hover-color-dark: lighten($highlight-dark, 15%);
+$pre-bg: #1d1f21;
+$pre-bg-dark: #2d2b57;
+$pre-color: #eaeaea;
+$pre-color-dark: #e3dfff;
+$code-bg: rgba(175, 184, 193, 0.2);
+$deemph-color: #777;
+$deemph-color-dark: #666;
+
+// Sizes.
+$font-size-base: 18px;
+$line-height-base: 1.428571429;
+$line-height-computed: floor(($font-size-base * $line-height-base));
+$body-margin: 8px;
+
+$grayish: lighten(desaturate($highlight, 60%), 50%);
+
+// Fonts!
+$title-font: Verdana, Tahoma, Geneva, sans-serif;
+$font-family-base: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Cambria, Georgia, serif;
+$bigger-size: 1.1em;
+$ui-size: 0.9em;
+$code-font: ui-monospace, SF Mono, 'Anonymous Pro', Inconsolata, Consolas, 'Source Code Pro', Menlo, Monaco, monospace;
+
+// Dark mode.
+:root {
+    color-scheme: light dark;
+}
+
+// Basic style.
+body {
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    font-family: $font-family-base;
+    color: $text-color;
+    margin: $body-margin;
+    @media (prefers-color-scheme: dark) {
+        color: $text-color-dark;
+        background-color: $bg-dark;
+    }
+}
+a {
+    text-decoration: none;
+    color: $highlight;
+    @media (prefers-color-scheme: dark) {
+        color: $highlight-dark;
+    }
+    code {
+        // Code retains a color inside a link.
+        color: inherit;
+    }
+}
+a:hover {
+    text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: $title-font;
+    font-weight: 500;
+    line-height: 115%;
+}
+.container {
+    // Narrow, centered column.
+    max-width: $column-width;
+    margin: 0 auto;
+}
+p {
+    margin: 0 0 calc($line-height-computed / 2);
+}
+hr {
+    margin-top: $line-height-computed;
+    margin-bottom: $line-height-computed;
+    border: 0;
+    border-top: 1px solid $highlight;
+    @media (prefers-color-scheme: dark) {
+        border-top-color: $highlight-dark;
+    }
+}
+
+// Page header layout.
+$leftwidth: 310;
+header {
+    margin-top: 0.5rem;
+
+    // Mobile: stacked.
+    nav {
+        margin-top: 0.75rem;
+    }
+
+    // Desktop: side by side.
+    @media (min-width: $mobile-size) {
+        display: flex;
+        #leader {
+            width: $leftwidth;
+        }
+        nav {
+            width: $column-width - $leftwidth;
+            margin-top: 0.5rem;
+        }
+    }
+}
+
+// Page header style.
+header {
+    color: $highlight;
+    @media (prefers-color-scheme: dark) {
+        color: $highlight-dark;
+    }
+    font-family: $title-font;
+    a:hover {
+        text-decoration: none;
+    }
+    h1 {
+        margin: 0;
+        font-size: 35px;
+    }
+    address {
+        font-style: normal;
+        margin: 0;
+        p {
+            margin: 0;
+        }
+    }
+}
+#leader {
+    white-space: nowrap;
+}
+nav {
+    font-size: $ui-size;
+    a {
+        display: inline-block;
+        margin: 0;
+        padding: 0 3px;
+        border: 1px solid transparent;
+        border-radius: 3px;
+    }
+    a.active {
+        border-color: $highlight;
+        @media (prefers-color-scheme: dark) {
+            border-color: $highlight-dark;
+        }
+    }
+    a.active:hover {
+        border-color: $link-hover-color;
+        @media (prefers-color-scheme: dark) {
+            border-color: $link-hover-color-dark;
+        }
+    }
+
+    // Negate first/last link padding.
+    margin: 0 -3px;
+
+    // Looser layout on desktop.
+    @media (min-width: $mobile-size) {
+        text-align: right;
+        a {
+            padding: 2px 6px;
+        }
+    }
+}
+
+// Headings.
+h1, h2, h3, h4, h5, h6 {
+    font-family: $title-font;
+}
+
+// Lists.
+ul {
+    list-style: square;
+}
+ul, ol {
+    padding-left: 0;
+    @media (max-width: $mobile-size) {
+        padding-left: 1.5em;
+    }
+    ul, ol {
+        padding-left: 1em;
+    }
+}
+ul li, ol li {
+    margin: $body-margin 0;
+    ul li {
+        // Second level is more compact.
+        margin: 0;
+    }
+}
+
+// Front-page bio block.
+.blurb {
+    margin: 1em 0;
+}
+
+// Adornments on blog posts and such.
+.tagline {
+    text-transform: uppercase;
+    font-family: $title-font;
+    font-size: $ui-size;
+    margin: 0;
+    color: $deemph-color;
+    a {
+        color: inherit;
+    }
+    @media (prefers-color-scheme: dark) {
+        color: $deemph-color-dark;
+    }
+}
+.with-tagline {
+    margin-bottom: 0;
+}
+
+// Blog post previews on the homepage and blog index.
+article.preview {
+    margin-top: 1.5em;
+    h3 {
+        margin: 0;
+        font-family: $title-font;
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+    .excerpt p {
+        margin: 0;
+    }
+}
+article.preview.alone {
+    // Concatenate the "keep reading" link inline.
+    .excerpt p {
+        display: inline;
+        margin-right: 0.5em;
+    }
+    .excerpt .tagline {
+        display: inline-block;
+    }
+}
+
+// Headings.
+$font-size-h1:            floor(($font-size-base * 2.6));
+$font-size-h2:            floor(($font-size-base * 2.15));
+$font-size-h3:            ceil(($font-size-base * 1.7));
+$font-size-h4:            ceil(($font-size-base * 1.25));
+$font-size-h5:            $font-size-base;
+$font-size-h6:            ceil(($font-size-base * 0.85));
+h1 {
+    font-size: $font-size-h1;
+}
+h2 {
+    font-size: $font-size-h2;
+}
+h3 {
+    font-size: $font-size-h3;
+}
+h4 {
+    font-size: $font-size-h4;
+}
+h5 {
+    font-size: $font-size-h5;
+}
+h6 {
+    font-size: $font-size-h6;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-top: $line-height-computed;
+  margin-bottom: calc($line-height-computed / 2);
+}
+
+article.full {
+    margin-top: 1em;
+
+    // In full articles, shift down the type sizing.
+    h1 {
+        font-size: $font-size-h2;
+    }
+    h2 {
+        font-size: $font-size-h3;
+    }
+    h3 {
+        font-size: $font-size-h4;
+    }
+    h4 {
+        font-size: $font-size-h5;
+    }
+    h5 {
+        font-size: $font-size-h6;
+    }
+}
+
+
+// Blog post asides and warning labels.
+aside {
+    padding: 1em;
+    margin-bottom: $line-height-computed;
+    display: block;
+    p {
+        margin: 0;
+    }
+
+    color: $inset-text;
+    background-color: $inset-bg;
+    border: 1px solid $inset-border;
+
+    @media (prefers-color-scheme: dark) {
+        color: $inset-text-dark;
+        background-color: $inset-bg-dark;
+        border-color: $inset-border-dark;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: underline;
+    }
+
+    // Based on Bootstrap's alert component.
+    &.warning {
+        color: #8a6d3b;
+        background-color: #fcf8e3;
+        border: 1px solid #faebcc;
+    }
+}
+
+
+footer {
+    color: $deemph-color;
+    font-family: $title-font;
+    border-top: 1px solid $highlight;
+    margin: $line-height-computed 0 0.5em;
+    padding-top: 0.4em;
+    @media (prefers-color-scheme: dark) {
+        border-top-color: $highlight-dark;
+        color: $deemph-color-dark;
+    }
+}
+
+img.illus {
+    float: right;
+    margin: 1em;
+}
+
+.portrait {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+blockquote {
+    margin-left: 0;
+    margin-right: 0;
+    border-left: 2.5rem solid $grayish;
+    padding-left: 0.5rem;
+}
+
+.showcase {
+    text-align: center;
+    font-size: 115%;
+}
+
+// Contact page FAQ headings.
+.contact h3 {
+    font-size: inherit;
+    font-weight: bold;
+
+    &:target {
+        background: $highlight;
+        color: white;
+        outline: 0.75rem solid $highlight;
+        @media (prefers-color-scheme: dark) {
+            background-color: $highlight-dark;
+            outline-color: $highlight-dark;
+        }
+    }
+}
+
+
+// Plainer style for the CV page.
+.cv {
+    header {
+        color: inherit;
+        margin: 0;
+        display: block;
+    }
+    footer {
+        border-top: none;
+        text-align: center;
+    }
+    ul, ol {
+        padding-left: 1.5em;
+        margin-top: -0.7em;
+        li {
+            margin: 0;
+        }
+    }
+    p strong {
+        font-weight: normal;
+        font-size: $bigger-size;
+    }
+    @media print {
+        a {
+            color: inherit;
+        }
+        address {
+            color: inherit
+        }
+        font-size: 80%;
+        h2 {
+            font-size: 170%;
+        }
+    }
+    p .details {
+        font-size: 0.9em;
+        color: #999;
+    }
+    .collapsed p {
+        display: inline-block;
+        margin-right: 1em;
+        margin-bottom: 0.2em;
+    }
+    &.mini {
+        font-size: 70%;
+        h1, h2 {
+            font-size: 120%;
+        }
+        h2 {
+            margin-top: 1em;
+            margin-bottom: 0.2em;
+        }
+        p {
+            margin-bottom: 0.2em;
+        }
+    }
+}
+
+/* Responsive video embed.
+ * http://amobil.se/2011/11/responsive-embeds/
+ */
+.embed {
+    position: relative;
+    padding-bottom: 56.25%; /* 16/9 ratio */
+    padding-top: 30px; /* IE6 workaround*/
+    height: 0;
+    overflow: hidden;
+}
+.embed iframe,
+.embed object,
+.embed embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+// Disable dumb print styles.
+@media print {
+    a[href]:after, abbr[title]:after {
+      content: "" !important;
+    }
+}
+
+// Inline code.
+pre, code {
+    font-family: $code-font;
+    font-size: ($font-size-base - 4);
+}
+code {
+    background-color: $code-bg;
+    padding: .2em .4em;
+    border-radius: 3px;
+}
+
+pre code {
+    display: block;
+    background: inherit;
+
+    // Make <pre> code scroll horizontally when it's too wide (e.g., on
+    // mobile).
+    overflow-x: auto;
+    word-wrap: normal;
+    white-space: pre;
+
+    border-radius: 3px;
+
+    // Some nonsense to make code background hang "outside" of the column.
+    padding: 1em;
+    margin-left: -$body-margin;
+    margin-right: -$body-margin;
+}
+
+// Responsive images.
+@mixin img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.img-responsive {
+    @include img-responsive;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%
+}
+
+// Floaty figures.
+figure {
+    float: right;
+    margin: 0 0 0 1em;
+    img {
+        @include img-responsive;
+        margin: 0 auto 0.5em;
+    }
+    @media (max-width: 767px) {
+        float: none;
+        margin: 1em auto;
+    }
+}
+figcaption {
+    font-size: ceil(($font-size-base * 0.85));
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+// KaTeX fonts. By default, it's too large.
+.katex {
+    font-size: 1.05em !important;
+}
+
+// Bookmarklet link style.
+.bookmarklet {
+    display: block;
+    width: 6rem;
+    margin: auto;
+    text-align: center;
+    background: #999;
+    color: white;
+    border-radius: 4px;
+    font-family: $title-font;
+    padding: 3px 0;
+    box-shadow: 2px 2px 2px #ccc;
+    text-shadow: 1px 1px 2px #ccc;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+abbr[title] {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: $deemph-color;
+    text-decoration-thickness: 1.5px;
+    @media (prefers-color-scheme: dark) {
+        text-decoration-color: $deemph-color-dark;
+    }
+    &:active {
+        text-decoration: none;
+        color: $deemph-color;
+        @media (prefers-color-scheme: dark) {
+            color: $deemph-color-dark;
+        }
+        &::before {
+            content: attr(title) ' (';
+        }
+        &::after {
+            content: ')';
+        }
+    }
+}
+
+// Faking ANSI terminal colors.
+code {
+    .ansi-green {
+        font-weight: bold;
+        color: $highlight;
+        @media (prefers-color-scheme: dark) {
+            color: $highlight-dark;
+        }
+    }
+    .ansi-red {
+        font-weight: bold;
+        color: #cc1b1b;
+    }
+}
+
+// Include Rouge/Pygments syntax highlighting themes.

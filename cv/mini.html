@@ -1,0 +1,92 @@
+---
+layout: default
+plain: true
+class: cv mini
+title: 'Sneha Aenugu: Short CV'
+---
+{% assign cv = site.data.cv %}
+
+<header>
+    <h1>
+        <a href="{{ site.base }}/">{{ cv.name }}</a>
+    </h1>
+    <address>
+        {{ cv.affiliation | markdownify }}
+    </address>
+</header>
+
+<section>
+    <h2>Education</h2>
+    {% for school in cv.education %}
+    <p>
+        <strong>{{ school.school }}</strong><br>
+        {{ school.degree }}<br>
+        {{ school.dates }}<br>
+        {{ school.note }}
+    </p>
+    {% endfor %}
+</section>
+
+<section>
+    <h2>Selected Conference Publications</h2>
+    {% for paper in site.data.pubs %}
+        {% if paper.type == 'conference' and paper.selected %}
+            {% include paper_cv.html %}
+        {% endif %}
+    {% endfor %}
+</section>
+
+<section>
+    <h2>Selected Honors</h2>
+    {% for h in cv.honors %}
+        {% if h.selected %}
+        {{ h.text | markdownify }}
+        {% endif %}
+    {% endfor %}
+</section>
+
+<section>
+    <h2>Research Positions</h2>
+    {% for job in cv.jobs %}
+    <p>
+        {{ job.dates }}:
+        {{ job.title }},
+        <strong>{{ job.where }}</strong>
+    </p>
+    {% endfor %}
+</section>
+
+<section class="collapsed">
+    <h2>Ph.D. Students</h2>
+    {% for category in students %}
+    {% if category.category == "Ph.D." %}
+        {% if category.details %}<p>{{ category.details }}</p>{% endif %}
+        {% assign st = category.students | sort: 'start' | reverse %}
+        {% for student in st %}
+        <p>
+            <strong>{% if student.link %}<a href="{{ student.link }}">{% endif %}{{ student.name }}{% if student.link %}</a>{% endif %}</strong>,
+            {% if student.start == student.end %}
+            {{ student.start }}
+            {% elsif student.end %}
+            {{ student.start }}&ndash;{{ student.end }}
+            {% else %}
+            {{ student.start }}&ndash;
+            {% endif %}
+        </p>
+        {% endfor %}
+    {% endif %}
+    {% endfor %}
+</section>
+
+<section class="collapsed">
+    <h2>Recent Review Committees</h2>
+    {% for c in cv.committees %}
+    {% if c.year > 2017 %}
+    <p>
+        {% if c.link %}<a href="{{c.link}}">{% endif %}
+        {{ c.venue }} {{ c.year }}
+        {% if c.link %}</a>{% endif %}
+    </p>
+    {% endif %}
+    {% endfor %}
+</section>

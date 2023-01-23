@@ -1,0 +1,72 @@
+name: Sneha Aenugu
+author: Sneha Aenugu
+url:
+base: '/~saenugu'
+twitter: '@aenugusneha'
+email: 'saenugu@caltech.edu'
+logo:
+ghrepo: https://github.com/asneha213/home
+
+# Use a prefix for the local server. Eventually, replace `base` with this.
+baseurl: '/~saenugu'
+
+markdown: kramdown
+kramdown:
+    input: GFM
+    hard_wrap: false
+    enable_coderay: false
+    auto_ids: true
+    entity_output: symbolic
+    math_engine: null
+highlighter: rouge
+
+sass:
+    style: compressed
+    sass_dir: _source
+
+exclude:
+    - bower_components
+    - node_modules
+    - package.json
+    - bower.json
+    - Makefile
+
+permalink: /blog/:title.html
+
+defaults:
+    -
+        scope:
+            path: ""
+            type: posts
+        values:
+            layout: post
+    -
+        scope:
+            path: ""
+            type: drafts
+        values:
+            layout: post
+    -
+        scope:
+            type: pages
+        values:
+            permalink: /:path/:basename:output_ext
+
+navigation:
+    - title: home
+      link: /
+    - title: research
+      link: /research.html
+    - title: blog
+      link: /blog/
+    - title: contact
+      link: /contact.html
+
+redirect:
+    files/enerjproofs.pdf: media/enerjproofs.pdf
+
+# Rendered drafts.
+collections:
+    drafts:
+        output: true
+        permalink: /blog/drafts/:slug.html

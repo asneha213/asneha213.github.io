@@ -1,0 +1,146 @@
+---
+layout: longy
+---
+{% assign cv = site.data.cv %}
+
+
+<section>
+    <h2>Education</h2>
+    {% for school in cv.education %}
+    <p>
+        <strong>{{ school.school }}</strong><br>
+        {{ school.degree }}<br>
+        {{ school.dates }}<br>
+        {{ school.note }}
+    </p>
+    {% endfor %}
+</section>
+
+<section>
+    <h2>Journals</h2>
+    {% for paper in site.data.pubs %}
+        {% if paper.type == 'journal' %}
+            {% include paper_cv.html %}
+        {% endif %}
+    {% endfor %}
+</section>
+
+
+<section>
+    <h2>Conference Proceedings</h2>
+    {% for paper in site.data.pubs %}
+        {% if paper.type == 'conference' %}
+            {% include paper_cv.html %}
+        {% endif %}
+    {% endfor %}
+</section>
+
+
+<section>
+    <h2>Technical Reports</h2>
+    {% for paper in site.data.pubs %}
+        {% if paper.type == 'report' %}
+            {% include paper_cv.html %}
+        {% endif %}
+    {% endfor %}
+</section>
+
+<section>
+    <h2>Patents</h2>
+    {% for patent in cv.patents %}
+    <p>
+        <a href="https://patents.google.com/patent/{{patent.id}}">{{ patent.id }}</a>:
+        &ldquo;{{ patent.title }}.&rdquo;
+        {{ patent.inventors }}.
+        Filed {{ patent.filed | date: "%B %e, %Y" }}.
+    </p>
+    {% endfor %}
+</section>
+
+<section>
+    <h2>Invited Talks</h2>
+    {% for talk in cv.talks %}
+    {% if talk.type == 'invited' %}
+    <p>
+        {{ talk.date | date: "%B %e, %Y" }}:
+        <span class="title">
+            {% if talk.link %}<a href="{{ talk.link }}">{% endif %}{% unless talk.notitle %}&ldquo;{% endunless %}{{ talk.title }}.{% unless talk.notitle %}&rdquo;{% endunless %}{% if talk.link %}</a>{% endif %}
+        </span>
+        {{ talk.where | markdownify | remove: '<p>' | remove: '</p>' | strip }}.
+        {% for extra in talk.extra %}
+            {{ extra | markdownify | remove: '<p>' | remove: '</p>' | strip }}
+        {% endfor %}
+    </p>
+    {% endif %}
+    {% endfor %}
+</section>
+
+
+<section>
+    <h2>Contributed Talks</h2>
+    {% for talk in cv.talks %}
+    {% if talk.type == 'contributed' %}
+    <p>
+        {{ talk.date | date: "%B %e, %Y" }}:
+        <span class="title">
+            {% if talk.link %}<a href="{{ talk.link }}">{% endif %}{% unless talk.notitle %}&ldquo;{% endunless %}{{ talk.title }}.{% unless talk.notitle %}&rdquo;{% endunless %}{% if talk.link %}</a>{% endif %}
+        </span>
+        {{ talk.where | markdownify | remove: '<p>' | remove: '</p>' | strip }}.
+        {% for extra in talk.extra %}
+            {{ extra | markdownify | remove: '<p>' | remove: '</p>' | strip }}
+        {% endfor %}
+    </p>
+    {% endif %}
+    {% endfor %}
+</section>
+
+
+
+<section>
+    <h2>Professional Experience</h2>
+    {% for job in cv.jobs %}
+    <p>
+        {{ job.title }}<br>
+        <strong>{{ job.where }}</strong><br>
+        {{ job.dates }}
+    </p>
+    {% endfor %}
+</section>
+
+<section>
+    <h2>Honors</h2>
+     <ul>
+    {% for h in cv.honors %}
+        <li> {{ h.text }} </li>
+    {% endfor %}
+    </ul>
+</section>
+
+
+<section>
+    <h2>Teaching</h2>
+    {% for t in cv.teaching %}
+    {% if t.where %}
+    <p>{{ t.where }}:</p>
+    <ul>
+    {% for c in t.classes %}
+        <li>{% if c.link %}<a href="{{c.link}}">{% endif %}{{ c.term }}: {{ c.number }}, “{{ c.title }}.”{% if c.link %}</a>{% endif %}</li>
+    {% endfor %}
+    </ul>
+    {% else %}
+        {{ t | markdownify }}
+    {% endif %}
+    {% endfor %}
+</section>
+
+<section>
+    <h2>Service</h2>
+    {% for text in cv.service %}
+        {{ text | markdownify }}
+    {% endfor %}
+   
+</section>
+
+<footer>
+    {{ cv.name }} &mdash; <a href="mailto:{{ cv.email }}">{{ cv.email }}</a>
+</footer>

@@ -1,0 +1,142 @@
+name: Sneha Aenugu
+email: saenugu@caltech.edu
+
+affiliation: |
+    Graduate Student, [Social & Decision Neuroscience](https://www.hss.caltech.edu/graduate-studies/social-and-decision-neuroscience-phd-program)
+
+    [California Institute of Technology](http://www.caltech.edu)
+
+education:
+    -
+        school: California Institute of Technology
+        degree: Ph.D., Social and Decision Neuroscience
+        dates: 2021&ndash;2026
+        note: |
+            Advisor: <a href="http://olab.caltech.edu/">John O'Doherty</a>
+    -
+        school: University of Massachusetts Amherst
+        degree: Master of Science in Computer Science
+        dates: 2018&ndash;2020
+
+    -
+        school: Indian Institute of Technology Madras
+        degree: Bachelor of Technology in Electrical Engineering <br/> Master of Technology in Communication Engineering
+        dates: 2011&ndash;2016
+      
+jobs:
+    -
+        title: Graduate Research Assistant
+        where: California Institute of Technology
+        dates: 2022&ndash;
+        selected: true
+
+    -
+        title: Data Scientist
+        where: Enolink Technologies
+        dates: 2020&ndash;2021
+        selected: true
+
+    -
+        title: Research Engineer
+        where: Netradyne Inc
+        dates: 2016&ndash;2018
+        selected: true
+
+  
+
+honors:
+    - text: '<a href="https://neuroscience.caltech.edu/grants/chen-graduate-innovator-grant-awards">Chen Graduate Innovator Award</a>, 10000$ Grant awarded to pursue independent research proposal, 2022'
+      selected: true
+      year: 2019
+      description: sdsds
+    - text: 'HSS Recruitment Fellowship Awarded 5000$ by the HSS department at Caltech, 2021'
+      selected: true
+    - text: '<a href="https://www.cheninstitute.org/programs-funding/supporting-scientists/graduate-fellows-2021-2022">Chen Graduate Fellowship</a>, 2021'
+      selected: true
+    - text: 'ACM SIGEVO Travel Grant for paper presentation at GECCO, Prague, 2019'
+
+    - text: 'Travel Award by Arthur.M.Sackler Colloquium on Brain Produces Mind by Modeling 2019'
+
+    - text: 'Innovative Student Project by Industrial Consultancy and Sponsored Research, IIT Madras 2013'
+
+    - text: 'Scholarship for Higher Education by the Board of Intermediate Education, India, 2011'
+
+    - text: 'National Top 10% in Indian National Astronomy Olympiad, 2009 & 2011'
+   
+
+teaching:
+
+    - where: California Institute of Technology
+      classes:
+          - term: 2023
+            number: Teaching Assistant
+            title: Introduction to Economics
+
+    - where: University of Massachusetts Amherst
+      classes:
+          - term: 2019
+            number: Teaching Assistant
+            title: Advanced Machine Learning
+
+    - where: Indian Institute of Technology Madras
+      classes:
+          - term: 2016
+            number: Teaching Assistant
+            title: Signals & Systems
+          - term: 2015
+            number: Teaching Assistant
+            title: Computer Aided Design Laboratory
+          - term: 2015
+            number: Teaching Assistant
+            title: Introduction of Programming
+          
+   
+
+service:
+    - |
+        Outreach, City of STEM, Los Angeles (2022)
+
+    - |
+        Volunteer, Make A Difference Foundation (2016 &ndash; 2017)
+
+    - |
+        Public Policy Research Intern, Rakshak Foundation (2014)
+
+    - |
+        Correspondent, The Fifth Estate &ndash; IIT Madras Newsletter (2013 &ndash; 2014)
+
+    - |
+        Placement Coordinator, IIT Madras Placement Cell (2013 &ndash; 2014)
+    
+
+
+talks:
+    -
+        title: "Reinforcement learning with a network of spiking agents"
+        where: "UCSD Computation Group mini-symposium"
+        link: ""
+        type: invited
+        date: 2021-02-05
+
+    -
+        title: "Biologically plausible credit assignment in a network of neurons"
+        where: "UCL Gatsby Computational Neuroscience Unit"
+        link: ""
+        type: invited
+        date: 2021-01-27
+
+    -
+        title: "Lexicase selection in learning classifier systems"
+        where: "Proceedings of The Genetic and Evolutionary Computation Conference 2019"
+        link: ""
+        type: contributed
+        date: 2019-07-14
+    
+
+patents:
+    -
+        title: "Detection of driving actions that mitigate risk"
+        inventors: "Michael Campos, Venkata Sreekanta Reddy Annapureddy, Vikram Gupta, Hisham Rahman, Sneha Aenugu, Priyam Bakliwal, Alexander Thomas, Adam David Kahn, David Jonathan Julian, Sandeep Pandya, Avneesh Agrawal"
+        id: 'US11314209'
+
+   

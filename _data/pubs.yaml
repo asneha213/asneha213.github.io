@@ -1,0 +1,49 @@
+-
+    title: 'Asymmetric weights and retrieval practice in an autoassociative neural network model
+of paired-associate learning'
+    authors: 'Sneha Aenugu and David Huber'
+    venue: 'Neural Computation 2021'
+    type: journal
+    area: comp-neuro
+    selected: true
+    pre: false
+    url: 'https://direct.mit.edu/neco/article-abstract/33/12/3351/107680/Asymmetric-Weights-and-Retrieval-Practice-in-an?redirectedFrom=fulltext'
+
+-
+    title: ' Lexicase selection in learning classifier systems'
+    authors: 'Sneha Aenugu and Lee Spector,'
+    venue: 'Proceedings of The Genetic and
+Evolutionary Computation Conference (Oral Presentation) 2019'
+    type: conference
+    area: ai
+    pre: false
+    url: 'https://arxiv.org/pdf/1907.04736'
+
+-
+    title: 'Reinforcement learning with a network of spiking agents'
+    authors: 'Sneha Aenugu, Abhishek Sharma, Sasikiran Yelamarthy, Hananel Hazan, Philip Thomas, Robert Kozma'
+    venue: 'NeurIPS Workshop on Real Neurons and Hidden Units 2019'
+    selected: false
+    area: rl
+    type: conference
+    url: 'https://arxiv.org/pdf/1910.06489'
+
+
+-
+    title: 'A memory enhanced LSTM for modeling complex temporal dependencies'
+    authors: 'Sneha Aenugu'
+    venue: 'NeurIPS Workshop on
+Context and Compositionality in Biological and Artificial Neural Systems 2019'
+    selected: false
+    area: ai
+    type: conference
+    url: 'https://arxiv.org/pdf/1910.12388'
+
+-
+    title: 'Perturbation-based exploration methods in deep reinforcement learning'
+    authors: 'Sneha Aenugu'
+    venue: 'arxiv 2020 '
+    selected: false
+    area: rl
+    type: report
+    url: 'https://arxiv.org/pdf/2011.05446'
