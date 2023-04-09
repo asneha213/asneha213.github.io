@@ -70,6 +70,9 @@ teaching:
       classes:
           - term: 2023
             number: Teaching Assistant
+            title: Introduction to Neuroscience
+          - term: 2023
+            number: Teaching Assistant
             title: Introduction to Economics
 
     - where: University of Massachusetts Amherst
@@ -94,6 +97,9 @@ teaching:
 
 service:
     - |
+        Organizer, Caltech Brain Imaging Center (CBIC) seminar series (2022 &ndash; )
+
+    - |
         Outreach, City of STEM, Los Angeles (2022)
 
     - |
@@ -111,6 +117,13 @@ service:
 
 
 talks:
+
+    -
+        title: "Neural underpinnings of narrative improvisation"
+        where: "Chen Graduate Innovator Symposium"
+        link: ""
+        type: invited
+        date: 2023-01-13
     -
         title: "Reinforcement learning with a network of spiking agents"
         where: "UCSD Computation Group mini-symposium"

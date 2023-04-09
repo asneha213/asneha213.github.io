@@ -47,3 +47,38 @@ Context and Compositionality in Biological and Artificial Neural Systems 2019'
     area: rl
     type: report
     url: 'https://arxiv.org/pdf/2011.05446'
+
+
+-
+    title: 'Modeling frustration-induced decision-making through reinforcement learning'
+    authors: 'Sneha Aenugu, Bowen. J. Fung, Dean Mobbs'
+    venue: 'Lake Arrowhead Conference on Neurobiology of Reward and Decision Making, 2022'
+    selected: false
+    area: rl
+    type: abstract
+
+
+-
+    title: 'Learning complex action representations for goal-directed tasks through neuromodulation of Hebbian plasticity'
+    authors: 'Sneha Aenugu, Abhishek Sharma, Sasikiran Yelamarthy, Hananel Hazan, Philip Thomas, Robert Kozma'
+    venue: 'Society for Neuroscience (SFN), Chicago 2019'
+    selected: false
+    area: rl
+    type: abstract
+
+-
+    title: 'Associative symmetry redux: A behavioral and modeling reanalysis of paired-associate learning'
+    authors: 'Sneha Aenugu, Anushree Mehta, David Huber'
+    venue: 'Arthur. M. Sackler Colloquium on Brain Produces Mind by Modeling, 2019 '
+    selected: false
+    area: rl
+    type: abstract
+
+
+-
+    title: 'Cell segmentation in AAV tracer images of a mouse brain'
+    authors: 'Sneha Aenugu, Daniel Ferrante, Partha Mitra'
+    venue: 'Workshop on Machine Intelligence and Brain Research, IIT Madras 2016 '
+    selected: false
+    area: rl
+    type: abstract

@@ -37,6 +37,16 @@ layout: longy
 
 
 <section>
+    <h2>Conference Abstracts</h2>
+    {% for paper in site.data.pubs %}
+        {% if paper.type == 'abstract' %}
+            {% include paper_cv.html %}
+        {% endif %}
+    {% endfor %}
+</section>
+
+
+<section>
     <h2>Technical Reports</h2>
     {% for paper in site.data.pubs %}
         {% if paper.type == 'report' %}
