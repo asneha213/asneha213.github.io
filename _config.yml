@@ -1,8 +1,8 @@
 name: Sneha Aenugu
 author: Sneha Aenugu
-url: 'https://asneha213.github.io/'
+url: 'https://snehaaenugu.com/'
 #base: '/~saenugu'
-base: 'https://asneha213.github.io/'
+base: 'https://snehaaenugu.com/'
 twitter: '@aenugusneha'
 email: 'saenugu@caltech.edu'
 logo:
@@ -10,7 +10,7 @@ ghrepo: https://github.com/asneha213/home
 
 # Use a prefix for the local server. Eventually, replace `base` with this.
 #baseurl: '/~saenugu'
-baseurl: 'https://asneha213.github.io/'
+baseurl: 'https://snehaaenugu.com/'
 
 markdown: kramdown
 kramdown:
