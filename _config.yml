@@ -1,7 +1,6 @@
 name: Sneha Aenugu
 author: Sneha Aenugu
 
-
 # comment these three for local server
 url: 'https://asneha213.github.io/'
 base: 'https://asneha213.github.io/'
@@ -11,11 +10,11 @@ baseurl: 'https://asneha213.github.io/'
 #baseurl: '/~saenugu'
 #base: '/~saenugu'
 
+
 twitter: '@aenugusneha'
 email: 'saenugu@caltech.edu'
 logo:
 ghrepo: https://github.com/asneha213/home
-
 
 
 
