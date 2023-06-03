@@ -10,7 +10,7 @@ blurb: |
 [scholar]: https://scholar.google.com/citations?user=U9ZyH9oAAAAJ&hl=en
 
 
-## Computational Cognitive Neuroscience
+### Computational Cognitive Neuroscience
 
 <ul>
 {% for paper in site.data.pubs %}
@@ -21,7 +21,7 @@ blurb: |
 </ul>
 ---
 
-## Reinforcement learning
+### Reinforcement learning
 
 <ul>
 {% for paper in site.data.pubs %}
@@ -33,7 +33,7 @@ blurb: |
 
 ---
 
-## Machine Learning
+### Machine Learning
 
 <ul>
 {% for paper in site.data.pubs %}

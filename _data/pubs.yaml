@@ -54,7 +54,6 @@ Context and Compositionality in Biological and Artificial Neural Systems 2019'
     authors: 'Sneha Aenugu, Bowen. J. Fung, Dean Mobbs'
     venue: 'Lake Arrowhead Conference on Neurobiology of Reward and Decision Making, 2022'
     selected: false
-    area: rl
     type: abstract
 
 
@@ -63,7 +62,6 @@ Context and Compositionality in Biological and Artificial Neural Systems 2019'
     authors: 'Sneha Aenugu, Abhishek Sharma, Sasikiran Yelamarthy, Hananel Hazan, Philip Thomas, Robert Kozma'
     venue: 'Society for Neuroscience (SFN), Chicago 2019'
     selected: false
-    area: rl
     type: abstract
 
 -
@@ -71,7 +69,6 @@ Context and Compositionality in Biological and Artificial Neural Systems 2019'
     authors: 'Sneha Aenugu, Anushree Mehta, David Huber'
     venue: 'Arthur. M. Sackler Colloquium on Brain Produces Mind by Modeling, 2019 '
     selected: false
-    area: rl
     type: abstract
 
 
@@ -80,5 +77,4 @@ Context and Compositionality in Biological and Artificial Neural Systems 2019'
     authors: 'Sneha Aenugu, Daniel Ferrante, Partha Mitra'
     venue: 'Workshop on Machine Intelligence and Brain Research, IIT Madras 2016 '
     selected: false
-    area: rl
     type: abstract

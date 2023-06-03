@@ -1,16 +1,23 @@
 name: Sneha Aenugu
 author: Sneha Aenugu
+
+
+# comment these three for local server
 url: 'https://asneha213.github.io/'
-#base: '/~saenugu'
 base: 'https://asneha213.github.io/'
+baseurl: 'https://asneha213.github.io/'
+
+# Use a prefix for the local server. Eventually, replace `base` with this.
+#baseurl: '/~saenugu'
+#base: '/~saenugu'
+
 twitter: '@aenugusneha'
 email: 'saenugu@caltech.edu'
 logo:
 ghrepo: https://github.com/asneha213/home
 
-# Use a prefix for the local server. Eventually, replace `base` with this.
-#baseurl: '/~saenugu'
-baseurl: 'https://asneha213.github.io/'
+
+
 
 markdown: kramdown
 kramdown:

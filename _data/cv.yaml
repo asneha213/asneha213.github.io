@@ -45,6 +45,8 @@ jobs:
   
 
 honors:
+    - text: '<a href="https://www.youtube.com/watch?v=oD9T16K3FFs">Finalist</a>, Caltech 3 Minute Thesis competition, 2023'
+
     - text: '<a href="https://neuroscience.caltech.edu/grants/chen-graduate-innovator-grant-awards">Chen Graduate Innovator Award</a>, 10000$ Grant awarded to pursue independent research proposal, 2022'
       selected: true
       year: 2019

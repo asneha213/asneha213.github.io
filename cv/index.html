@@ -5,7 +5,7 @@ layout: longy
 
 
 <section>
-    <h2>Education</h2>
+    <h3>Education</h3>
     {% for school in cv.education %}
     <p>
         <strong>{{ school.school }}</strong><br>
@@ -17,7 +17,7 @@ layout: longy
 </section>
 
 <section>
-    <h2>Journals</h2>
+    <h3>Journals</h3>
     {% for paper in site.data.pubs %}
         {% if paper.type == 'journal' %}
             {% include paper_cv.html %}
@@ -27,7 +27,7 @@ layout: longy
 
 
 <section>
-    <h2>Conference Proceedings</h2>
+    <h3>Conference Proceedings</h3>
     {% for paper in site.data.pubs %}
         {% if paper.type == 'conference' %}
             {% include paper_cv.html %}
@@ -37,7 +37,7 @@ layout: longy
 
 
 <section>
-    <h2>Conference Abstracts</h2>
+    <h3>Conference Abstracts</h3>
     {% for paper in site.data.pubs %}
         {% if paper.type == 'abstract' %}
             {% include paper_cv.html %}
@@ -47,7 +47,7 @@ layout: longy
 
 
 <section>
-    <h2>Technical Reports</h2>
+    <h3>Technical Reports</h3>
     {% for paper in site.data.pubs %}
         {% if paper.type == 'report' %}
             {% include paper_cv.html %}
@@ -56,7 +56,7 @@ layout: longy
 </section>
 
 <section>
-    <h2>Patents</h2>
+    <h3>Patents</h3>
     {% for patent in cv.patents %}
     <p>
         <a href="https://patents.google.com/patent/{{patent.id}}">{{ patent.id }}</a>:
@@ -68,7 +68,7 @@ layout: longy
 </section>
 
 <section>
-    <h2>Invited Talks</h2>
+    <h3>Invited Talks</h3>
     {% for talk in cv.talks %}
     {% if talk.type == 'invited' %}
     <p>
@@ -87,7 +87,7 @@ layout: longy
 
 
 <section>
-    <h2>Contributed Talks</h2>
+    <h3>Contributed Talks</h3>
     {% for talk in cv.talks %}
     {% if talk.type == 'contributed' %}
     <p>
@@ -107,7 +107,7 @@ layout: longy
 
 
 <section>
-    <h2>Professional Experience</h2>
+    <h3>Professional Experience</h3>
     {% for job in cv.jobs %}
     <p>
         {{ job.title }}<br>
@@ -118,7 +118,7 @@ layout: longy
 </section>
 
 <section>
-    <h2>Honors</h2>
+    <h3>Honors</h3>
      <ul>
     {% for h in cv.honors %}
         <li> {{ h.text }} </li>
@@ -128,7 +128,7 @@ layout: longy
 
 
 <section>
-    <h2>Teaching</h2>
+    <h3>Teaching</h3>
     {% for t in cv.teaching %}
     {% if t.where %}
     <p>{{ t.where }}:</p>
@@ -144,7 +144,7 @@ layout: longy
 </section>
 
 <section>
-    <h2>Service</h2>
+    <h3>Service</h3>
     {% for text in cv.service %}
         {{ text | markdownify }}
     {% endfor %}
