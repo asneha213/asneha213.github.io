@@ -3,7 +3,7 @@ layout: home
 ---
 
 
-I am a second year graduate student at the Social and Decision Neuroscience program at Caltech. My thesis advisor is [John O'Doherty][olab].
+I am a third year graduate student at the Social and Decision Neuroscience program at Caltech. My thesis advisor is [John O'Doherty][olab].
 
 I'm broadly interested in studying reward-modulated learning and planning by humans in complex state and action spaces. I am also interested in studying capacity limitations in cognitive machinery and their manifestations in everyday decisions.
 
