@@ -1,0 +1,45 @@
+---
+layout: default
+title: Home
+---
+<main class="home-main">
+<section class="hero">
+  <figure class="portrait-card">
+    <img src="/assets/images/sneha-portrait.png" alt="Portrait of Sneha Aenugu">
+    <nav class="social-thumbnails" aria-label="Social profiles">
+      <a href="https://x.com/AenuguSneha" aria-label="X"><img src="/assets/icons/x.svg" alt=""></a>
+      <a href="https://bsky.app/profile/saenugu.bsky.social" aria-label="Bluesky"><img src="/assets/icons/bluesky.svg" alt=""></a>
+      <a href="https://www.linkedin.com/in/sneha-aenugu-63573854/" aria-label="LinkedIn"><img src="/assets/icons/linkedin.svg" alt=""></a>
+      <a href="https://github.com/asneha213" aria-label="GitHub"><img src="/assets/icons/github.svg" alt=""></a>
+      <a href="https://scholar.google.com/citations?user=U9ZyH9oAAAAJ&amp;hl=en" aria-label="Google Scholar"><img src="/assets/icons/google-scholar.svg" alt=""></a>
+    </nav>
+    <div class="portrait-email">
+      <a href="mailto:saenugu@salk.edu">saenugu@salk.edu</a>
+      <button class="copy-email" type="button" data-email="saenugu@salk.edu" aria-label="Copy email address">Copy</button>
+    </div>
+  </figure>
+  <div class="hero-copy">
+    <p class="eyebrow">Computational neuroscientist in the making</p>
+    <h1>Systems-level modeling of goal-directed agency</h1>
+    <div class="lede">
+      <p>I study how humans set their goals and decide on courses of action to pursue them over their lifetime. I take a systems-level approach to trace the mechanistic basis of agency, following this blueprint:</p>
+
+      <ol>
+        <li>How do we decide what to pursue at any instant of time? In other words, I study how preferences materialize.</li>
+        <li>How do we chart the courses of action to pursue our goals? I tackle human subgoal discovery, problem-solving, and planning in complex state and action spaces.</li>
+        <li>How do we build skills to aid in our goal pursuit continually? I tackle human schema building, compositional generalization, and abstraction.</li>
+        <li>How do we flexibly adapt our goals in response to changing environmental pressures? I study goal persistence and flexibility.</li>
+      </ol>
+
+      <p>My approach as a theorist is to move through multiple levels of abstraction: cellular → circuits → systems. I believe in multi-model approaches, and that as a theorist you can position yourself to move between techniques to solve specific questions at varied resolutions. My key focus in facilitating this is to collaborate widely with experimentalists and leverage the power of open-access datasets. I believe in the power of collaborative research and bringing the community together to answer ambitious questions that no single scientist could dream of answering alone.</p>
+    </div>
+    <div class="actions"><a class="text-link" href="/cv/">View CV →</a></div>
+  </div>
+</section>
+<section class="home-grid">
+  <div class="featured-work"><p class="eyebrow">News</p>
+  {% for item in site.data.news limit:4 %}<article><span class="year">{{ item.date }}</span><div><h2>{% if item.url %}<a href="{{ item.url }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</h2><p>{{ item.description }}</p></div></article>{% endfor %}
+  <a class="text-link" href="/news/">View history →</a></div>
+  <aside class="latest-note"><p class="eyebrow">Latest writing</p>{% assign latest = site.posts.first %}{% if latest %}<time>{{ latest.date | date: '%-d %B %Y' }}</time><h2><a href="{{ latest.url }}">{{ latest.title }}</a></h2><p>{{ latest.excerpt | strip_html | truncatewords:30 }}</p>{% endif %}<a class="text-link" href="/blog/">More essays →</a></aside>
+</section>
+</main>

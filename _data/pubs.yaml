@@ -1,97 +1,102 @@
--
-    title: 'Asymmetric weights and retrieval practice in an autoassociative neural network model
-of paired-associate learning'
-    authors: 'Sneha Aenugu and David Huber'
-    venue: 'Neural Computation 2021'
-    type: journal
-    area: comp-neuro
-    selected: true
-    pre: false
-    url: 'https://direct.mit.edu/neco/article-abstract/33/12/3351/107680/Asymmetric-Weights-and-Retrieval-Practice-in-an?redirectedFrom=fulltext'
-
--
-    title: 'Retrospective value bias in setting temporally extended goals in humans'
-    authors: "Sneha Aenugu and John P. O'Doherty"
-    venue: 'Conference on Cognitive Computational Neuroscience 2023'
-    type: conference
-    area: comp-neuro
-    pre: false
-    url: 'https://2023.ccneuro.org/proceedings/0000450.pdf'
-
--
-    title: ' Lexicase selection in learning classifier systems'
-    authors: 'Sneha Aenugu and Lee Spector,'
-    venue: 'Proceedings of The Genetic and
-Evolutionary Computation Conference (Oral Presentation) 2019'
-    type: conference
-    area: ai
-    pre: false
-    url: 'https://arxiv.org/pdf/1907.04736'
-
--
-    title: 'Reinforcement learning with a network of spiking agents'
-    authors: 'Sneha Aenugu, Abhishek Sharma, Sasikiran Yelamarthy, Hananel Hazan, Philip Thomas, Robert Kozma'
-    venue: 'NeurIPS Workshop on Real Neurons and Hidden Units 2019'
-    selected: false
-    area: rl
-    type: conference
-    url: 'https://arxiv.org/pdf/1910.06489'
-
-
--
-    title: 'A memory enhanced LSTM for modeling complex temporal dependencies'
-    authors: 'Sneha Aenugu'
-    venue: 'NeurIPS Workshop on
-Context and Compositionality in Biological and Artificial Neural Systems 2019'
-    selected: false
-    area: ai
-    type: conference
-    url: 'https://arxiv.org/pdf/1910.12388'
-
--
-    title: 'Perturbation-based exploration methods in deep reinforcement learning'
-    authors: 'Sneha Aenugu'
-    venue: 'arxiv 2020 '
-    selected: false
-    area: rl
-    type: report
-    url: 'https://arxiv.org/pdf/2011.05446'
-
-
--
-    title: 'Momentum drives temporally-extended goal persistence in humans'
-    authors: "Sneha Aenugu and John P. O'Doherty"
-    venue: 'MURI - 2nd Workshop on Neuro-Glial Computation, St. Louis 2023'
-    selected: false
-    type: abstract
-
-
--
-    title: 'Modeling frustration-induced decision-making through reinforcement learning'
-    authors: 'Sneha Aenugu, Bowen. J. Fung, Dean Mobbs'
-    venue: 'Lake Arrowhead Conference on Neurobiology of Reward and Decision Making, 2022'
-    selected: false
-    type: abstract
-
-
--
-    title: 'Learning complex action representations for goal-directed tasks through neuromodulation of Hebbian plasticity'
-    authors: 'Sneha Aenugu, Abhishek Sharma, Sasikiran Yelamarthy, Hananel Hazan, Philip Thomas, Robert Kozma'
-    venue: 'Society for Neuroscience (SFN), Chicago 2019'
-    selected: false
-    type: abstract
-
--
-    title: 'Associative symmetry redux: A behavioral and modeling reanalysis of paired-associate learning'
-    authors: 'Sneha Aenugu, Anushree Mehta, David Huber'
-    venue: 'Arthur. M. Sackler Colloquium on Brain Produces Mind by Modeling, 2019 '
-    selected: false
-    type: abstract
-
-
--
-    title: 'Cell segmentation in AAV tracer images of a mouse brain'
-    authors: 'Sneha Aenugu, Daniel Ferrante, Partha Mitra'
-    venue: 'Workshop on Machine Intelligence and Brain Research, IIT Madras 2016 '
-    selected: false
-    type: abstract
+- title: 'Building momentum: A computational account of persistence toward long-term goals'
+  authors: "Sneha Aenugu and John P. O'Doherty"
+  venue: 'PLOS Computational Biology 21(5), 2025'
+  year: 2025
+  type: journal
+  url: 'https://doi.org/10.1371/journal.pcbi.1013054'
+- title: 'Asymmetric weights and retrieval practice in an autoassociative neural network model of paired-associate learning'
+  authors: 'Sneha Aenugu and David Huber'
+  venue: 'Neural Computation, 2021'
+  year: 2021
+  type: journal
+  url: 'https://direct.mit.edu/neco/article-abstract/33/12/3351/107680/'
+- title: 'Why we dive deep: A momentum-based account of depth-first persistence in hierarchically organized goals'
+  authors: "Sneha Aenugu and John P. O'Doherty"
+  venue: 'PsyArXiv, 2026'
+  year: 2026
+  type: report
+  pre: true
+  url: 'https://osf.io/preprints/psyarxiv/y8ztu'
+- title: 'Goals as dynamical attractors: A momentum-based account of stable and flexible goal commitment'
+  authors: 'Sneha Aenugu'
+  venue: 'bioRxiv, 2026'
+  year: 2026
+  type: report
+  pre: true
+  url: 'https://doi.org/10.64898/2026.05.06.723407'
+- title: 'The Cognitive Foundations of Conspiratorial Thinking'
+  authors: "Lisa Marieke Kluen, Caroline J. Charpentier, Jeffrey Cockburn, Tessa Rusch, Sneha R. Aenugu, Yimeng Li, Reza Tadayonnejad, R. Michael Alvarez, and John P. O'Doherty"
+  venue: 'PsyArXiv, 2024'
+  year: 2024
+  type: report
+  pre: true
+  url: 'https://osf.io/preprints/psyarxiv/8bqtu'
+- title: 'Training spiking neural networks using reinforcement learning'
+  authors: 'Sneha Aenugu'
+  venue: 'arXiv:2005.05941, 2020'
+  year: 2020
+  type: report
+  pre: true
+  url: 'https://arxiv.org/abs/2005.05941'
+- title: 'Perturbation-based exploration methods in deep reinforcement learning'
+  authors: 'Sneha Aenugu'
+  venue: 'arXiv, 2020'
+  year: 2020
+  type: report
+  pre: true
+  url: 'https://arxiv.org/pdf/2011.05446'
+- title: 'Building expertise through task-specific representational alignment in biological and artificial neural networks'
+  authors: "Ashug Gurijala, Michael Nguyen Jr., John O'Doherty, and Sneha Aenugu"
+  venue: 'NeurIPS 2025 Workshop on Unifying Representations in Neural Models (UniReps), Extended Abstract Track'
+  year: 2025
+  type: conference
+  url: 'https://openreview.net/pdf?id=f3ZDNxWaJX'
+- title: 'Retrospective value bias in setting temporally extended goals in humans'
+  authors: "Sneha Aenugu and John P. O'Doherty"
+  venue: 'Conference on Cognitive Computational Neuroscience, 2023'
+  year: 2023
+  type: conference
+  url: 'https://2023.ccneuro.org/proceedings/0000450.pdf'
+- title: 'Lexicase selection in learning classifier systems'
+  authors: 'Sneha Aenugu and Lee Spector'
+  venue: 'Genetic and Evolutionary Computation Conference (Oral Presentation), 2019'
+  year: 2019
+  type: conference
+  url: 'https://arxiv.org/pdf/1907.04736'
+- title: 'Reinforcement learning with a network of spiking agents'
+  authors: 'Sneha Aenugu, Abhishek Sharma, Sasikiran Yelamarthy, Hananel Hazan, Philip Thomas, Robert Kozma'
+  venue: 'NeurIPS Workshop on Real Neurons and Hidden Units, 2019'
+  year: 2019
+  type: conference
+  url: 'https://arxiv.org/pdf/1910.06489'
+- title: 'A memory enhanced LSTM for modeling complex temporal dependencies'
+  authors: 'Sneha Aenugu'
+  venue: 'NeurIPS Workshop on Context and Compositionality in Biological and Artificial Neural Systems, 2019'
+  year: 2019
+  type: conference
+  url: 'https://arxiv.org/pdf/1910.12388'
+- title: 'Momentum drives temporally-extended goal persistence in humans'
+  authors: "Sneha Aenugu and John P. O'Doherty"
+  venue: 'MURI - 2nd Workshop on Neuro-Glial Computation, St. Louis, 2023'
+  year: 2023
+  type: abstract
+- title: 'Modeling frustration-induced decision-making through reinforcement learning'
+  authors: 'Sneha Aenugu, Bowen J. Fung, Dean Mobbs'
+  venue: 'Lake Arrowhead Conference on Neurobiology of Reward and Decision Making, 2022'
+  year: 2022
+  type: abstract
+- title: 'Learning complex action representations for goal-directed tasks through neuromodulation of Hebbian plasticity'
+  authors: 'Sneha Aenugu, Abhishek Sharma, Sasikiran Yelamarthy, Hananel Hazan, Philip Thomas, Robert Kozma'
+  venue: 'Society for Neuroscience, Chicago, 2019'
+  year: 2019
+  type: abstract
+- title: 'Associative symmetry redux: A behavioral and modeling reanalysis of paired-associate learning'
+  authors: 'Sneha Aenugu, Anushree Mehta, David Huber'
+  venue: 'Arthur M. Sackler Colloquium on Brain Produces Mind by Modeling, 2019'
+  year: 2019
+  type: abstract
+- title: 'Cell segmentation in AAV tracer images of a mouse brain'
+  authors: 'Sneha Aenugu, Daniel Ferrante, Partha Mitra'
+  venue: 'Workshop on Machine Intelligence and Brain Research, IIT Madras, 2016'
+  year: 2016
+  type: abstract

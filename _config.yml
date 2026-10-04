@@ -1,80 +1,21 @@
+title: Sneha Aenugu
 name: Sneha Aenugu
-author: Sneha Aenugu
-
-# comment these three for local server
-url: 'https://asneha213.github.io/'
-base: 'https://asneha213.github.io/'
-baseurl: 'https://asneha213.github.io/'
-
-# Use a prefix for the local server. Eventually, replace `base` with this.
-#baseurl: '/~saenugu'
-#base: '/~saenugu'
-
-
-twitter: '@aenugusneha'
-email: 'saenugu@caltech.edu'
-logo:
-ghrepo: https://github.com/asneha213/home
-
-
-
+description: Computational neuroscience, reinforcement learning, and human decision-making.
+url: "https://snehaaenugu.com"
+author:
+  name: Sneha Aenugu
+  email: saenugu@salk.edu
 markdown: kramdown
-kramdown:
-    input: GFM
-    hard_wrap: false
-    enable_coderay: false
-    auto_ids: true
-    entity_output: symbolic
-    math_engine: null
 highlighter: rouge
-
-sass:
-    style: compressed
-    sass_dir: _source
-
-exclude:
-    - bower_components
-    - node_modules
-    - package.json
-    - bower.json
-    - Makefile
-
-permalink: /blog/:title.html
-
+javascript_enabled: true
 defaults:
-    -
-        scope:
-            path: ""
-            type: posts
-        values:
-            layout: post
-    -
-        scope:
-            path: ""
-            type: drafts
-        values:
-            layout: post
-    -
-        scope:
-            type: pages
-        values:
-            permalink: /:path/:basename:output_ext
-
-navigation:
-    - title: home
-      link: /
-    - title: research
-      link: /research.html
-    - title: blog
-      link: /blog/
-    - title: contact
-      link: /contact.html
-
-redirect:
-    files/enerjproofs.pdf: media/enerjproofs.pdf
-
-# Rendered drafts.
-collections:
-    drafts:
-        output: true
-        permalink: /blog/drafts/:slug.html
+  - scope:
+      type: posts
+    values:
+      layout: post
+      permalink: /post/:title
+plugins:
+  - jekyll-sitemap
+exclude:
+  - README.md
+  - vendor

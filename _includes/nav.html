@@ -1,0 +1,14 @@
+<nav class="top-nav" aria-label="Primary navigation">
+  <div class="brand-lockup">
+    <a class="brand" href="/">Sneha Aenugu</a>
+    <span>Postdoctoral Research Fellow<br>Salk Institute for Biological Studies</span>
+  </div>
+  <div class="nav-links">
+    <a class="nav-item{% if page.url == '/' %} active{% endif %}" href="/">About</a>
+    <a class="nav-item{% if page.url contains '/publications' %} active{% endif %}" href="/publications/">Publications</a>
+    <a class="nav-item{% if page.url contains '/cv' %} active{% endif %}" href="/cv/">CV</a>
+    <a class="nav-item{% if page.url contains '/blog' or page.layout == 'post' %} active{% endif %}" href="/blog/">Blog</a>
+    <a class="nav-item{% if page.url contains '/science-outreach' %} active{% endif %}" href="/science-outreach/">Outreach</a>
+    <button class="nav-item dark-light-switch" type="button" aria-label="Toggle dark mode">◐</button>
+  </div>
+</nav>
