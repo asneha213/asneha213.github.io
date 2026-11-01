@@ -1,3 +1,9 @@
+- title: 'Why We Dive Deep: A Momentum-Based Account of Depth-First Persistence in Hierarchically Organized Goals'
+  authors: "Sneha Aenugu and John P. O'Doherty"
+  venue: 'Topics in Cognitive Science, 2026 · Special Issue: Goal Dynamics in Cognition'
+  year: 2026
+  type: journal
+  url: 'https://doi.org/10.1111/tops.70087'
 - title: 'Building momentum: A computational account of persistence toward long-term goals'
   authors: "Sneha Aenugu and John P. O'Doherty"
   venue: 'PLOS Computational Biology 21(5), 2025'
@@ -10,13 +16,6 @@
   year: 2021
   type: journal
   url: 'https://direct.mit.edu/neco/article-abstract/33/12/3351/107680/'
-- title: 'Why we dive deep: A momentum-based account of depth-first persistence in hierarchically organized goals'
-  authors: "Sneha Aenugu and John P. O'Doherty"
-  venue: 'PsyArXiv, 2026'
-  year: 2026
-  type: report
-  pre: true
-  url: 'https://osf.io/preprints/psyarxiv/y8ztu'
 - title: 'Goals as dynamical attractors: A momentum-based account of stable and flexible goal commitment'
   authors: 'Sneha Aenugu'
   venue: 'bioRxiv, 2026'
