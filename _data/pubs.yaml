@@ -16,6 +16,13 @@
   year: 2021
   type: journal
   url: 'https://direct.mit.edu/neco/article-abstract/33/12/3351/107680/'
+- title: 'Mathematics for and by human cognition: A resource-rational search for bottlenecks in problem-solving'
+  authors: 'Sneha Aenugu'
+  venue: 'arXiv:2609.34410, 2026'
+  year: 2026
+  type: report
+  pre: true
+  url: 'https://arxiv.org/abs/2609.34410'
 - title: 'Goals as dynamical attractors: A momentum-based account of stable and flexible goal commitment'
   authors: 'Sneha Aenugu'
   venue: 'bioRxiv, 2026'
