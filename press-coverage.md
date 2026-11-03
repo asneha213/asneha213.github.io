@@ -5,6 +5,7 @@ eyebrow: In the media
 permalink: /press-coverage/
 wide: true
 ---
+<h2 class="coverage-heading">Press coverage</h2>
 <section class="coverage-pins" aria-label="Press coverage">
   <a class="coverage-pin" href="https://www.caltech.edu/about/news/what-makes-us-persist-toward-long-term-goals"><span class="coverage-thumbnail"><img src="/assets/images/coverage/caltech-long-term-goals.jpg" alt="Illustration of a person considering several long-term goals"></span><span class="coverage-source">Caltech News</span><strong>What Makes Us Persist Toward Long-Term Goals?</strong></a>
   <a class="coverage-pin" href="https://magazine.caltech.edu/post/perseverance-in-science"><span class="coverage-thumbnail"><img src="/assets/images/coverage/caltech-magazine-perseverance.webp" alt="Illustration for Caltech Magazine's feature on perseverance in science"></span><span class="coverage-source">Caltech Magazine</span><strong>Where Perseverance Meets Discovery</strong></a>
